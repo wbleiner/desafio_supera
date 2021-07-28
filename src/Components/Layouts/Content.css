@@ -1,0 +1,7 @@
+.Content {
+    margin-top: 60px;
+    padding: 20px 0;
+    display   : flex;
+    background: #121212;
+    color: white;
+}

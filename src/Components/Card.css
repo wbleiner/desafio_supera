@@ -1,0 +1,54 @@
+.Card {
+    display       : flex;
+    flex-direction: column;
+    max-width     : 220px;
+    overflow      : hidden;
+
+    border-color: white;
+
+    font-weight: lighter;
+
+}
+
+.Card>img {
+    max-height: 220px;
+    object-fit: contain;
+
+}
+
+.Card .NameProduct {
+    padding-top   : 10px;
+    height        : 50px;
+    display       : flex;
+    flex-direction: column;
+    text-align    : center;
+    overflow      : hidden;
+    color         : #dcdcdcc5;
+
+}
+
+.Card .DetailsPrice {
+
+    align-items    : center;
+    overflow       : hidden;
+    display        : flex;
+    justify-content: space-around;
+}
+
+.Card .DetailsPrice>p {
+    font-size: 1rem;
+}
+
+.AddCart {
+    background-color: transparent;
+    border          : none;
+    color           : #4f9133;
+    cursor          : pointer;
+
+    transition: .5s;
+}
+
+.AddCart:hover {
+    background-color: #4f9133;
+    color           : #dcdcdcc5;
+}

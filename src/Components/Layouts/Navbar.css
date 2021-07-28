@@ -1,0 +1,77 @@
+.Header {
+    position        : fixed;
+    top             : 0;
+    left            : 0;
+    right           : 0;
+    height          : 60px;
+    box-sizing      : border-box;
+    padding         : 10px;
+    display         : flex;
+    justify-content : space-between;
+    background-color: #434343;
+    color           : white;
+    align-items     : center;
+
+}
+.Logo{
+    max-width: 70px;
+    display: block;
+}
+.Menu {
+    display   : flex;
+    gap       : .5rem;
+    list-style: none;
+}
+
+.Menu a {
+    display: block;
+    padding: 20px;
+
+}
+
+a:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.Btn-Mobile {
+    background-color: transparent;
+    border          : none;
+    color           : white;
+    cursor          : pointer;
+    display         : none;
+}
+
+@media(max-width: 600px) {
+    .Btn-Mobile {
+        display: block;
+    }
+
+    .Menu {
+        display   : block;
+        position  : absolute;
+        width     : 100%;
+        top       : 60px;
+        right     : 0px;
+        background: #151515;
+        transition: 0.5s;
+        z-index   : 1000;
+        height    : 0px;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+
+    .Menu a {
+        text-align   : center;
+        padding      : 1rem, 0;
+        margin       : 0 1rem;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+    }
+}
+
+.Active .Menu {
+    height     : calc(100vh - 60px);
+    visibility : visible;
+    overflow-y : auto;
+    align-items: center;
+
+}

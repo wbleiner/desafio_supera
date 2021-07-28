@@ -1,0 +1,35 @@
+.Home {
+    display        : flex;
+    flex-direction : column;
+    max-width      : 900px;
+    margin         : auto;
+    justify-content: center;
+    
+
+}
+
+.Home .Container {
+    display              : grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.Home .Select {
+    
+    gap: 10px;
+    display: flex;
+    padding: 20px;    
+}
+
+@media(max-width:570px) {
+    .Home .Container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width:400px) {
+    .Home .Container {
+        display       : flex;
+        flex-direction: column;
+    }
+}
