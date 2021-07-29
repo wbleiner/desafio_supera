@@ -13,6 +13,11 @@
     align-items     : center;
 
 }
+.iconCart{
+    display: block;
+   text-align: center;
+    
+}
 .Logo{
     max-width: 70px;
     display: block;

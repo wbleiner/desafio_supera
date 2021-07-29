@@ -1,18 +1,19 @@
 .Card {
-    display       : flex;
-    flex-direction: column;
-    max-width     : 220px;
-    overflow      : hidden;
-
-    border-color: white;
-
-    font-weight: lighter;
-
+    display         : flex;
+    flex-direction  : column;
+    max-width       : 220px;
+    overflow        : hidden;
+    font-weight     : lighter;
+    background-color: #121212;
+    border-radius   : 10px;
+    border          : solid 1px #dcdcdcc5;
 }
 
 .Card>img {
-    max-height: 220px;
-    object-fit: contain;
+    padding-top: 20px;
+    max-height : 220px;
+    object-fit : contain;
+
 
 }
 
@@ -24,10 +25,10 @@
     text-align    : center;
     overflow      : hidden;
     color         : #dcdcdcc5;
-
 }
 
 .Card .DetailsPrice {
+    padding-bottom: 20px;
 
     align-items    : center;
     overflow       : hidden;

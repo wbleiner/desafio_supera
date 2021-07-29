@@ -55,7 +55,7 @@ const Home = () => {
             </div>
             <div className="Container">
                 {orderedProducts.map((product) => {
-                    return <Card key={product.id} name={product.name} image={product.image} price={product.price} />
+                    return <Card key={product.id} name={product.name} image={product.image} price={product.price} id={product.id} />
                 }
                 )}
             </div>

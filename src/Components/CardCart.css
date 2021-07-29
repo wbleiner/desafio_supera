@@ -1,0 +1,59 @@
+.CardCart {
+    display              : grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items          : center;
+    text-align           : center;
+    grid-gap             : 30px;
+    padding              : 30px;
+    overflow             : hidden;
+    
+
+}
+
+.CardCart>img {
+    max-width: 80px;
+    overflow : hidden;
+    align-self: center;
+}
+
+.CardCart .Prod {
+    padding: 10px;
+    display        : flex;
+    flex-direction : column;
+    justify-content: center;
+    align-items    : center;
+}
+.CardCart .UnitPrice{
+    height: 70px;
+}
+.CardCart .Trash {
+    background-color: transparent;
+    color           : #ff0000e3;
+    border          : none;
+    cursor          : pointer;
+    padding-top         : 15px;
+
+}
+
+.CardCart>input:focus {
+    outline: none;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance   : none;
+    appearance        : none;
+    margin            : 0;
+}
+
+.Quantity {
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+
+}
+
+.Quantity>input {
+    max-width: 20px;
+}
