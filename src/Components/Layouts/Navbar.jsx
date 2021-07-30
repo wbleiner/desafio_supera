@@ -21,7 +21,7 @@ const Navbar = props => {
                         <li><Link to="/">Ínicio</Link ></li>
                         
                         <li ><Link to="/shoppingcart">
-                            Carrinho <span>{Cart.length ? Cart.length : ''}</span>
+                            Carrinho <span className="NumberOnCart" >{Cart.length ? Cart.length : ''}</span>
                         </Link ></li>
                     </ul>
                 </nav>

@@ -1,0 +1,18 @@
+[
+    {
+        "code": "Desc15",
+        "discount": 15
+    },
+    {
+        "codigo": "Desc20",
+        "discount": 20
+    },
+    {
+        "code": "Desc25",
+        "discount": 25
+    },
+    {
+        "code": "Desc30",
+        "discount": 30
+    }
+]

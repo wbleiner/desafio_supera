@@ -6,6 +6,7 @@ const PricesCard = props => {
     const style ={
         color: props.color
     }
+    
     return (
         <div className="PricesCard" style={style} >
             <h2>{props.title}</h2>

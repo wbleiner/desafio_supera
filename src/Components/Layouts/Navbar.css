@@ -13,15 +13,18 @@
     align-items     : center;
 
 }
-.iconCart{
-    display: block;
-   text-align: center;
-    
+
+.iconCart {
+    display   : block;
+    text-align: center;
+
 }
-.Logo{
+
+.Logo {
     max-width: 70px;
-    display: block;
+    display  : block;
 }
+
 .Menu {
     display   : flex;
     gap       : .5rem;
@@ -79,4 +82,11 @@ a:hover {
     overflow-y : auto;
     align-items: center;
 
+}
+
+.NumberOnCart {
+    position : absolute;
+    top      : 30px;
+    font-size: 15px;
+    color    : #0fff47;
 }
