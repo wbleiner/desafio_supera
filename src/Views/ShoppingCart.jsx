@@ -15,11 +15,11 @@ const arrayCoupons = [
     },
     {
         code: 'Desc25',
-        discount: 20
+        discount: 25
     },
     {
         code: 'Desc30',
-        discount: 20
+        discount: 30
     }
 ];
 
@@ -40,16 +40,16 @@ const ShoppingCart = props => {
         });
         setSubtotal(sub)
         if (sub < 250) {
-            setShipping((Cart.length * 10) - appliedCoupon)
+            setShipping(Cart.length * 10)
         }
         else {
             setShipping(0)
         }
-        setTotal(sub + (Cart.length * 10) - appliedCoupon)
-    }, [Cart, appliedCoupon])
+        setTotal(sub + shipping - appliedCoupon)
+    }, [Cart, appliedCoupon, shipping])
     const ApplyCoupon = () => {
         
-        const newCoupon = arrayCoupons.find(item => item.code.toLocaleUpperCase() == coupon.toLocaleUpperCase())
+        const newCoupon = arrayCoupons.find(item => item.code.toLocaleUpperCase() === coupon.toLocaleUpperCase())
         console.log(newCoupon)
         if (newCoupon) {
             setErroCoupon(false)
