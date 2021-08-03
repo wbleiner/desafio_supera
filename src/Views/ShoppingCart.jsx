@@ -80,7 +80,7 @@ const ShoppingCart = props => {
                     <div className="Cards">
                         {Cart.map((item, index) => {
 
-                            return <CardCart key={index} name={item.name} price={item.price} image={item.urlImage} index={index} />
+                            return <CardCart key={index} name={item.name} price={formatValueReal(item.price)} image={item.urlImage} index={index} />
                         })}
                         <button className="BtnClear" onClick={() => clearCart()}>Limpar carrinho</button>
                     </div>
@@ -106,7 +106,7 @@ const ShoppingCart = props => {
                             <span>O frete é grátis para compras acima de <b>R$ 250,00</b>.</span>
                             <div className="DeitalsPrice">
                                 <PricesCard title="Subtotal" value={formatValueReal(subtotal)}></PricesCard>
-                                <PricesCard title="Cupom" value={formatValueReal(appliedCoupon)} color="#5a8e5a"></PricesCard>
+                                <PricesCard title="Cupom" value={formatValueReal(-appliedCoupon)} color="#5a8e5a"></PricesCard>
                                 <PricesCard title="Frete" value={formatValueReal(shipping)}></PricesCard>
                                 <PricesCard title="Total" value={formatValueReal(total)}></PricesCard>
                                 <button className="CouponButton" style={{ background: "#5a8e5a", color: "white" }}>Finalizar Compra</button>
